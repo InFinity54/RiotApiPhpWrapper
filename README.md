@@ -43,7 +43,7 @@ This wrapper is, for the moment, only compatible with _League of Legends_ APIs. 
 
 | API                 | Documentation                                                  | Status |
 |---------------------|----------------------------------------------------------------|--------|
-| account-v1          | [🔗](https://developer.riotgames.com/apis#account-v1)          | ⛔      |
+| account-v1          | [🔗](https://developer.riotgames.com/apis#account-v1)          | ✅      |
 | champion-mastery-v4 | [🔗](https://developer.riotgames.com/apis#champion-mastery-v4) | ⛔      |
 | champion-v3         | [🔗](https://developer.riotgames.com/apis#champion-v3)         | ⛔      |
 | clash-v1            | [🔗](https://developer.riotgames.com/apis#clash-v1)            | ⛔      |

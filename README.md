@@ -20,7 +20,7 @@ The wrapper isn't available directly with Composer for the moment, because it is
 }
 ```
 
-Then use `composer install` to update the `vendor` folder.
+Then use `composer update` to update the `vendor` folder.
 
 ## How to use
 

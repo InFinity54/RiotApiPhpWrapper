@@ -11,7 +11,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Riot\\": "src/"
+            "Riot\\API\\": "src/API",
+            "Riot\\Constants\\": "src/Constants",
+            "Riot\\DTO\\": "src/DTO",
+            "Riot\\Exception\\": "src/Exception"
         }
     }
 }

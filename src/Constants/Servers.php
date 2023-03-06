@@ -87,7 +87,7 @@ class Servers
 
     public static function getAllServers(): array
     {
-        return array_merge(
+        return array(
             self::$br, self::$eune, self::$euw, self::$jp, self::$kr, self::$lan, self::$las, self::$na, self::$oce,
             self::$ph, self::$ru, self::$sg, self::$th, self::$tr, self::$tw, self::$vn
         );

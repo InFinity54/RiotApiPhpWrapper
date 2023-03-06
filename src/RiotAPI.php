@@ -44,12 +44,27 @@ class RiotAPI
      * @throws ForbiddenException
      * @throws Exception
      */
-    public function executeRequest(string $url, string $method = "GET"): object
+    public function executeRequest(string $url, array $headers = [], string $method = "GET"): object
     {
         $curl = new Curl();
-        $curl->setHeader("X-Riot-Token", $this->getToken());
-        $curl->get($url);
 
+        // Headers
+        $curl->setHeader("X-Riot-Token", $this->getToken());
+        if (count($headers) > 0) {
+            foreach ($headers as $headerName => $headerValue) {
+                $curl->setHeader($headerName, $headerValue);
+            }
+        }
+
+        // Method
+        switch ($method) {
+            default:
+            case "GET":
+                $curl->get($url);
+                break;
+        }
+
+        // Response handle
         switch ($curl->getHttpStatusCode())
         {
             case 200:

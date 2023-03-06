@@ -43,7 +43,7 @@ This wrapper is, for the moment, only compatible with _League of Legends_ APIs. 
 
 | API                 | Documentation                                                  | Status |
 |---------------------|----------------------------------------------------------------|--------|
-| account-v1          | [🔗](https://developer.riotgames.com/apis#account-v1)          | ✅      |
+| account-v1          | [🔗](https://developer.riotgames.com/apis#account-v1)          | ⛔      |
 | champion-mastery-v4 | [🔗](https://developer.riotgames.com/apis#champion-mastery-v4) | ⛔      |
 | champion-v3         | [🔗](https://developer.riotgames.com/apis#champion-v3)         | ⛔      |
 | clash-v1            | [🔗](https://developer.riotgames.com/apis#clash-v1)            | ⛔      |
@@ -53,6 +53,6 @@ This wrapper is, for the moment, only compatible with _League of Legends_ APIs. 
 | lol-status-v4       | [🔗](https://developer.riotgames.com/apis#lol-status-v4)       | ⛔      |
 | match-v5            | [🔗](https://developer.riotgames.com/apis#match-v5)            | ⛔      |
 | spectator-v4        | [🔗](https://developer.riotgames.com/apis#spectator-v4)        | ⛔      |
-| summoner-v4         | [🔗](https://developer.riotgames.com/apis#summoner-v4)         | ⛔      |
+| summoner-v4         | [🔗](https://developer.riotgames.com/apis#summoner-v4)         | ✅      |
 | tournament-stub-v4  | [🔗](https://developer.riotgames.com/apis#tournament-stub-v4)  | ⛔      |
 | tournament-v4       | [🔗](https://developer.riotgames.com/apis#tournament-v4)       | ⛔      |

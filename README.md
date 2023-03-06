@@ -4,7 +4,7 @@ Package to use Riot Games APIs more easily and more quickly in your PHP projects
 
 ## Getting started
 
-Open your `composer.json` file, and add the following lines in it.
+The wrapper isn't available directly with Composer for the moment, because it is still under development. You can use it in your projects by adding it manually into your `composer.json` file. To do this, open the file, and add the following lines inside it.
 
 ```json
 {

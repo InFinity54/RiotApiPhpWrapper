@@ -8,7 +8,6 @@ The wrapper isn't available directly with Composer for the moment, because it is
 
 ```json
 {
-  // ...
   "repositories": [
     {
       "type": "vcs",
@@ -16,11 +15,8 @@ The wrapper isn't available directly with Composer for the moment, because it is
     }
   ],
   "require": {
-    // ...
-    "infinity54/riotapiphpwrapper": "dev-master",
-    // ...
+    "infinity54/riotapiphpwrapper": "dev-master"
   }
-  // ...
 }
 ```
 

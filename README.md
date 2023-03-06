@@ -10,7 +10,7 @@ The wrapper isn't available directly with Composer for the moment, because it is
 {
   "repositories": [
     {
-      "type": "vcs",
+      "type": "git",
       "url": "https://github.com/InFinity54/RiotApiPhpWrapper.git"
     }
   ],

@@ -2,6 +2,8 @@
 
 Package to use Riot Games APIs more easily and more quickly in your PHP projects. Inspired by [Simivar's PHP wrapper](https://github.com/simivar/riot-php). Wrapper is using [Curl]() to execute HTTP requests. Curl is implemented with [php-curl-class](https://github.com/php-curl-class/php-curl-class) to improve code readability.
 
+⚠ Note that this package is still under development. Everything can change at any moment until development is finished.
+
 ## How to install
 
 To install the wrapper in your PHP project, just install it like any other package with Composer.

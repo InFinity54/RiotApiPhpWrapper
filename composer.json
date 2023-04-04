@@ -1,7 +1,6 @@
 {
     "name": "infinity54/riotapiphpwrapper",
     "description": "Package to use Riot Games APIs more easily and more quickly in your PHP projects.",
-    "version": "1.0.0",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "stable",

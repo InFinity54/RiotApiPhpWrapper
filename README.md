@@ -2,25 +2,13 @@
 
 Package to use Riot Games APIs more easily and more quickly in your PHP projects. Inspired by [Simivar's PHP wrapper](https://github.com/simivar/riot-php). Wrapper is using [Curl]() to execute HTTP requests. Curl is implemented with [php-curl-class](https://github.com/php-curl-class/php-curl-class) to improve code readability.
 
-## Getting started
+## How to install
 
-The wrapper isn't available directly with Composer for the moment, because it is still under development. You can use it in your projects by adding it manually into your `composer.json` file. To do this, open the file, and add the following lines inside it.
+To install the wrapper in your PHP project, just install it like any other package with Composer.
 
-```json
-{
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/InFinity54/RiotApiPhpWrapper.git"
-    }
-  ],
-  "require": {
-    "infinity54/riotapiphpwrapper": "dev-master"
-  }
-}
+```bash
+composer require infinity54/riotapiphpwrapper
 ```
-
-Then use `composer update` to update the `vendor` folder.
 
 ## How to use
 

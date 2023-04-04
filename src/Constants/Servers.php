@@ -12,22 +12,25 @@ class Servers
         ],
         "shortName" => "BR"
     ];
+
     public static array $eune = [
         "id" => "EUN1",
         "name" => [
-            "en" => "Europe West",
-            "fr" => "Europe (Nord/Est)"
+            "en" => "EU Nordic & East",
+            "fr" => "EU Nord & Est"
         ],
         "shortName" => "EUNE"
     ];
+
     public static array $euw = [
         "id" => "EUW1",
         "name" => [
-            "en" => "Europe West",
-            "fr" => "Europe (Ouest)"
+            "en" => "EU West",
+            "fr" => "EU Ouest"
         ],
         "shortName" => "EUW"
     ];
+
     public static array $jp = [
         "id" => "JP1",
         "name" => [
@@ -36,6 +39,7 @@ class Servers
         ],
         "shortName" => "JP"
     ];
+
     public static array $kr = [
         "id" => "KR",
         "name" => [
@@ -44,22 +48,25 @@ class Servers
         ],
         "shortName" => "KR"
     ];
+
     public static array $lan = [
         "id" => "LA1",
         "name" => [
-            "en" => "Latin America North",
+            "en" => "Latin America (North)",
             "fr" => "Amérique Latine (Nord)"
         ],
         "shortName" => "LAN"
     ];
+
     public static array $las = [
         "id" => "LA2",
         "name" => [
-            "en" => "Latin America South",
+            "en" => "Latin America (South)",
             "fr" => "Amérique Latine (Sud)"
         ],
         "shortName" => "LAS"
     ];
+
     public static array $na = [
         "id" => "NA1",
         "name" => [
@@ -68,6 +75,7 @@ class Servers
         ],
         "shortName" => "NA"
     ];
+
     public static array $oce = [
         "id" => "OC1",
         "name" => [
@@ -76,6 +84,7 @@ class Servers
         ],
         "shortName" => "OCE"
     ];
+
     public static array $ph = [
         "id" => "PH2",
         "name" => [
@@ -84,6 +93,7 @@ class Servers
         ],
         "shortName" => "PH"
     ];
+
     public static array $ru = [
         "id" => "RU",
         "name" => [
@@ -92,6 +102,7 @@ class Servers
         ],
         "shortName" => "RU"
     ];
+
     public static array $sg = [
         "id" => "SG2",
         "name" => [
@@ -100,6 +111,7 @@ class Servers
         ],
         "shortName" => "SG"
     ];
+
     public static array $th = [
         "id" => "TH2",
         "name" => [
@@ -108,6 +120,7 @@ class Servers
         ],
         "shortName" => "TH"
     ];
+
     public static array $tr = [
         "id" => "TR1",
         "name" => [
@@ -116,6 +129,7 @@ class Servers
         ],
         "shortName" => "TR"
     ];
+
     public static array $tw = [
         "id" => "TW2",
         "name" => [
@@ -124,6 +138,7 @@ class Servers
         ],
         "shortName" => "TW"
     ];
+
     public static array $vn = [
         "id" => "VN2",
         "name" => [

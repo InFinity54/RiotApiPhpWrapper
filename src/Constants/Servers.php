@@ -2,153 +2,56 @@
 
 namespace Riot\Constants;
 
-class Servers
+use Riot\RiotConstant;
+
+class Servers extends RiotConstant
 {
-    public static array $br = [
-        "id" => "BR1",
-        "name" => [
-            "en" => "Brazil",
-            "fr" => "Brésil"
-        ],
-        "shortName" => "BR"
-    ];
+    private const TRANSLATION_DOMAIN = "serversnames";
 
-    public static array $eune = [
-        "id" => "EUN1",
-        "name" => [
-            "en" => "EU Nordic & East",
-            "fr" => "EU Nord & Est"
-        ],
-        "shortName" => "EUNE"
-    ];
+    public array $br = [ "id" => "BR1", "shortName" => "BR" ];
+    public array $eune = [ "id" => "EUN1", "shortName" => "EUNE" ];
+    public array $euw = [ "id" => "EUW1", "shortName" => "EUW" ];
+    public array $jp = [ "id" => "JP1", "shortName" => "JP" ];
+    public array $kr = [ "id" => "KR", "shortName" => "KR" ];
+    public array $lan = [ "id" => "LA1", "shortName" => "LAN" ];
+    public array $las = [ "id" => "LA2", "shortName" => "LAS" ];
+    public array $na = [ "id" => "NA1", "shortName" => "NA" ];
+    public array $oce = [ "id" => "OC1", "shortName" => "OCE" ];
+    public array $ph = [ "id" => "PH2", "shortName" => "PH" ];
+    public array $ru = [ "id" => "RU", "shortName" => "RU" ];
+    public array $sg = [ "id" => "SG2", "shortName" => "SG" ];
+    public array $th = [ "id" => "TH2", "shortName" => "TH" ];
+    public array $tr = [ "id" => "TR1", "shortName" => "TR" ];
+    public array $tw = [ "id" => "TW2", "shortName" => "TW" ];
+    public array $vn = [ "id" => "VN2", "shortName" => "VN" ];
 
-    public static array $euw = [
-        "id" => "EUW1",
-        "name" => [
-            "en" => "EU West",
-            "fr" => "EU Ouest"
-        ],
-        "shortName" => "EUW"
-    ];
+    public function __construct($lang)
+    {
+        parent::__construct($lang);
 
-    public static array $jp = [
-        "id" => "JP1",
-        "name" => [
-            "en" => "Japan",
-            "fr" => "Japon"
-        ],
-        "shortName" => "JP"
-    ];
+        // Configure translation system
+        bindtextdomain(self::TRANSLATION_DOMAIN, "../../locale");
 
-    public static array $kr = [
-        "id" => "KR",
-        "name" => [
-            "en" => "South Korea",
-            "fr" => "Corée du Sud"
-        ],
-        "shortName" => "KR"
-    ];
+        // Define servers translated names
+        $this->br["name"] = gettext("Brazil");
+        $this->eune["name"] = gettext("EU Nordic & East");
+        $this->euw["name"] = gettext("EU West");
+        $this->jp["name"] = gettext("Japan");
+        $this->kr["name"] = gettext("South Korea");
+        $this->lan["name"] = gettext("Latin America (North)");
+        $this->las["name"] = gettext("Latin America (South)");
+        $this->na["name"] = gettext("North America");
+        $this->oce["name"] = gettext("Oceania");
+        $this->ph["name"] = gettext("Philippines");
+        $this->ru["name"] = gettext("Russia");
+        $this->sg["name"] = gettext("Singapore, Malaysia & Indonesia");
+        $this->th["name"] = gettext("Thailand");
+        $this->tr["name"] = gettext("Turkey");
+        $this->tw["name"] = gettext("Taiwan, Hong Kong & Macau");
+        $this->vn["name"] = gettext("Vietnam");
+    }
 
-    public static array $lan = [
-        "id" => "LA1",
-        "name" => [
-            "en" => "Latin America (North)",
-            "fr" => "Amérique Latine (Nord)"
-        ],
-        "shortName" => "LAN"
-    ];
-
-    public static array $las = [
-        "id" => "LA2",
-        "name" => [
-            "en" => "Latin America (South)",
-            "fr" => "Amérique Latine (Sud)"
-        ],
-        "shortName" => "LAS"
-    ];
-
-    public static array $na = [
-        "id" => "NA1",
-        "name" => [
-            "en" => "North America",
-            "fr" => "Amérique du Nord"
-        ],
-        "shortName" => "NA"
-    ];
-
-    public static array $oce = [
-        "id" => "OC1",
-        "name" => [
-            "en" => "Oceania",
-            "fr" => "Océanie"
-        ],
-        "shortName" => "OCE"
-    ];
-
-    public static array $ph = [
-        "id" => "PH2",
-        "name" => [
-            "en" => "Philippines",
-            "fr" => "Philippines"
-        ],
-        "shortName" => "PH"
-    ];
-
-    public static array $ru = [
-        "id" => "RU",
-        "name" => [
-            "en" => "Russia",
-            "fr" => "Russie"
-        ],
-        "shortName" => "RU"
-    ];
-
-    public static array $sg = [
-        "id" => "SG2",
-        "name" => [
-            "en" => "Singapore, Malaysia & Indonesia",
-            "fr" => "Singapour, Malaisie & Indonésie"
-        ],
-        "shortName" => "SG"
-    ];
-
-    public static array $th = [
-        "id" => "TH2",
-        "name" => [
-            "en" => "Thailand",
-            "fr" => "Thaïlande"
-        ],
-        "shortName" => "TH"
-    ];
-
-    public static array $tr = [
-        "id" => "TR1",
-        "name" => [
-            "en" => "Turkey",
-            "fr" => "Turquie"
-        ],
-        "shortName" => "TR"
-    ];
-
-    public static array $tw = [
-        "id" => "TW2",
-        "name" => [
-            "en" => "Taiwan, Hong Kong & Macau",
-            "fr" => "Taïwan, Hong Kong & Macao"
-        ],
-        "shortName" => "TW"
-    ];
-
-    public static array $vn = [
-        "id" => "VN2",
-        "name" => [
-            "en" => "Vietnam",
-            "fr" => "Vietnam"
-        ],
-        "shortName" => "VN"
-    ];
-
-    public static function getAllServers(): array
+    public function getAllServers(): array
     {
         return array(
             self::$br, self::$eune, self::$euw, self::$jp, self::$kr, self::$lan, self::$las, self::$na, self::$oce,

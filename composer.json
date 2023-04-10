@@ -6,7 +6,8 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.4",
-        "php-curl-class/php-curl-class": "^9.14"
+        "php-curl-class/php-curl-class": "^9.14",
+        "ext-gettext": "*"
     },
     "autoload": {
         "psr-4": {

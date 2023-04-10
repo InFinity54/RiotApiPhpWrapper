@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LeagueStats\n"
+"POT-Creation-Date: 2023-04-10 18:45+0200\n"
+"PO-Revision-Date: 2023-04-10 18:52+0200\n"
+"Last-Translator: \n"
+"Language-Team: InFinity_54 <contact@infinity54.fr>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+# BR
+msgid "Brazil"
+msgstr "Brazil"
+
+# EUNE
+msgid "EU Nordic & East"
+msgstr "EU Nordic & East"
+
+# EUW
+msgid "EU West"
+msgstr "EU West"
+
+# JP
+msgid "Japan"
+msgstr "Japan"
+
+# KR
+msgid "South Korea"
+msgstr "South Korea"
+
+# LAN
+msgid "Latin America (North)"
+msgstr "Latin America (North)"
+
+# LAS
+msgid "Latin America (South)"
+msgstr "Latin America (South)"
+
+# NA
+msgid "North America"
+msgstr "North America"
+
+# OCE
+msgid "Oceania"
+msgstr "Oceania"
+
+# PH
+msgid "Philippines"
+msgstr "Philippines"
+
+# RU
+msgid "Russia"
+msgstr "Russia"
+
+# SG
+msgid "Singapore, Malaysia & Indonesia"
+msgstr "Singapore, Malaysia & Indonesia"
+
+# TH
+msgid "Thailand"
+msgstr "Thailand"
+
+# TR
+msgid "Turkey"
+msgstr "Turkey"
+
+# TW
+msgid "Taiwan, Hong Kong & Macau"
+msgstr "Taiwan, Hong Kong & Macau"
+
+# VN
+msgid "Vietnam"
+msgstr "Vietnam"

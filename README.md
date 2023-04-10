@@ -4,6 +4,10 @@ Package to use Riot Games APIs more easily and more quickly in your PHP projects
 
 ⚠ Note that this package is still under development. Everything can change at any moment until development is finished.
 
+## Requirements
+
+You need to have installed and enabled `gettext` extension for PHP. This is needed to allow the translation system to work. **If this extension isn't enabled, wrapper can not work properly.**
+
 ## How to install
 
 To install the wrapper in your PHP project, just install it like any other package with Composer.
@@ -18,12 +22,16 @@ The `RiotApi` class file is the start point of the wrapper. It contains all the 
 * `API` classes implements available requests from Riot APIs.
 * `Constants` classes implements static data, like servers or tiers lists, which can be used (and sometimes required) in some requests.
 
+Some notes about the following example:
+* `$yourToken` variable needs to be replaced by your Riot API Token, which can be obtained on [Riot Developer Portal](https://developer.riotgames.com).
+* For constants classes, like `Servers`, you can pass a language code (like `en_US` or `fr_FR`) to the constructor. During class initialization, internationalization system will be initialized. The language code isn't required. If you don't provide any language code, `en_US` will be used by default.
+
 ```php
 // Example: Retrieve data about summoner named "LeagueOfLegends" on EUW server.
-// You will need to retrieve your Riot API Token, and to pass it to API classes.
-$apiSummonerV4 = new SummonerV4($yourToken);
+$apiSummonerV4 = new Riot\API\SummonerV4($yourToken);
+$servers = new Riot\Constants\Servers("fr_FR");
 $summonerName = "LeagueOfLegends";
-$summonerServerId = Riot\Constants\Servers::$euw["id"];
+$summonerServerId = $servers->euw["id"];
 return $apiSummonerV4->getSummonerByName($summonerName, $summonerServerId);
 ```
 

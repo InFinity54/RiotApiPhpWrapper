@@ -54,8 +54,8 @@ class Servers extends RiotConstant
     public function getAllServers(): array
     {
         return array(
-            self::$br, self::$eune, self::$euw, self::$jp, self::$kr, self::$lan, self::$las, self::$na, self::$oce,
-            self::$ph, self::$ru, self::$sg, self::$th, self::$tr, self::$tw, self::$vn
+            $this->br, $this->eune, $this->euw, $this->jp, $this->kr, $this->lan, $this->las, $this->na, $this->oce,
+            $this->ph, $this->ru, $this->sg, $this->th, $this->tr, $this->tw, $this->vn
         );
     }
 }

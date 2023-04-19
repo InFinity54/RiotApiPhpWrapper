@@ -24,14 +24,12 @@ The `RiotApi` class file is the start point of the wrapper. It contains all the 
 
 Some notes about the following example:
 * `$yourToken` variable needs to be replaced by your Riot API Token, which can be obtained on [Riot Developer Portal](https://developer.riotgames.com).
-* For constants classes, like `Servers`, you can pass a language code (like `en_US` or `fr_FR`) to the constructor. During class initialization, internationalization system will be initialized. The language code isn't required. If you don't provide any language code, `en_US` will be used by default.
 
 ```php
 // Example: Retrieve data about summoner named "LeagueOfLegends" on EUW server.
 $apiSummonerV4 = new Riot\API\SummonerV4($yourToken);
-$servers = new Riot\Constants\Servers("fr_FR");
 $summonerName = "LeagueOfLegends";
-$summonerServerId = $servers->euw["id"];
+$summonerServerId = Riot\Constants\Servers::euw["id"];
 return $apiSummonerV4->getSummonerByName($summonerName, $summonerServerId);
 ```
 

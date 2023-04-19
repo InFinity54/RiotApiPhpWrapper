@@ -44,7 +44,7 @@ This wrapper is, for the moment, only compatible with _League of Legends_ APIs. 
 | champion-v3         | [🔗](https://developer.riotgames.com/apis#champion-v3)         | ⛔      |
 | clash-v1            | [🔗](https://developer.riotgames.com/apis#clash-v1)            | ⛔      |
 | league-exp-v4       | [🔗](https://developer.riotgames.com/apis#league-exp-v4)       | ⛔      |
-| league-v4           | [🔗](https://developer.riotgames.com/apis#league-v4)           | ⛔      |
+| league-v4           | [🔗](https://developer.riotgames.com/apis#league-v4)           | ✅      |
 | lol-challenges-v1   | [🔗](https://developer.riotgames.com/apis#lol-challenges-v1)   | ⛔      |
 | lol-status-v4       | [🔗](https://developer.riotgames.com/apis#lol-status-v4)       | ⛔      |
 | match-v5            | [🔗](https://developer.riotgames.com/apis#match-v5)            | ⛔      |

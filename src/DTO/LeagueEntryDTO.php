@@ -19,12 +19,12 @@ class LeagueEntryDTO
     private bool $veteran;
     private bool $freshBlood;
     private bool $inactive;
-    private MiniSeriesDTO $miniSeries;
+    private ?MiniSeriesDTO $miniSeries;
 
     /**
      * @throws Exception
      */
-    public function __construct(string $leagueId, string $summonerId, string $summonerName, string $queueType, string $tier, string $rank, int $leaguePoints, int $wins, int $losses, bool $hotStreak, bool $veteran, bool $freshBlood, bool $inactive, array $miniSeries)
+    public function __construct(string $leagueId, string $summonerId, string $summonerName, string $queueType, string $tier, string $rank, int $leaguePoints, int $wins, int $losses, bool $hotStreak, bool $veteran, bool $freshBlood, bool $inactive, ?array $miniSeries)
     {
         $this->leagueId = $leagueId;
         $this->summonerId = $summonerId;
@@ -39,7 +39,10 @@ class LeagueEntryDTO
         $this->veteran = $veteran;
         $this->freshBlood = $freshBlood;
         $this->inactive = $inactive;
-        $this->miniSeries = new MiniSeriesDTO($miniSeries->losses, $miniSeries->progress, $miniSeries->target, $miniSeries->wins);
+
+        if ($miniSeries !== null) {
+            $this->miniSeries = new MiniSeriesDTO($miniSeries->losses, $miniSeries->progress, $miniSeries->target, $miniSeries->wins);
+        }
     }
 
     public function getLeagueId(): string
@@ -107,7 +110,7 @@ class LeagueEntryDTO
         return $this->inactive;
     }
 
-    public function getMiniSeries(): MiniSeriesDTO
+    public function getMiniSeries(): ?MiniSeriesDTO
     {
         return $this->miniSeries;
     }
@@ -128,7 +131,7 @@ class LeagueEntryDTO
             "veteran" => $this->getVeteran(),
             "freshBlood" => $this->getFreshBlood(),
             "inactive" => $this->getInactive(),
-            "miniSeries" => $this->getMiniSeries()->toArray()
+            "miniSeries" => ($this->getMiniSeries() !== null ? $this->getMiniSeries()->toArray() : null)
         ];
     }
 }

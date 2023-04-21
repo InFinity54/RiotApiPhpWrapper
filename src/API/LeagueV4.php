@@ -76,7 +76,7 @@ class LeagueV4 extends RiotAPI
                 $result[] = new LeagueEntryDTO(
                     $entry->leagueId, $entry->summonerId, $entry->summonerName, $entry->queueType, $entry->tier,
                     $entry->rank, $entry->leaguePoints, $entry->wins, $entry->losses, $entry->hotStreak,
-                    $entry->veteran, $entry->freshBlood, $entry->inactive, $entry->miniSeries
+                    $entry->veteran, $entry->freshBlood, $entry->inactive, ($entry->miniSeries ?? null)
                 );
             }
         }
@@ -114,7 +114,7 @@ class LeagueV4 extends RiotAPI
                 $result[] = new LeagueEntryDTO(
                     $entry->leagueId, $entry->summonerId, $entry->summonerName, $entry->queueType, $entry->tier,
                     $entry->rank, $entry->leaguePoints, $entry->wins, $entry->losses, $entry->hotStreak,
-                    $entry->veteran, $entry->freshBlood, $entry->inactive, $entry->miniSeries
+                    $entry->veteran, $entry->freshBlood, $entry->inactive, ($entry->miniSeries ?? null)
                 );
             }
         }

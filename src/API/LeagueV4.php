@@ -42,7 +42,7 @@ class LeagueV4 extends RiotAPI
         $url = "https://".strtolower($regionId).".api.riotgames.com/lol/league/v4/challengerleagues/by-queue/".$queueName;
         $data = $this->executeRequest($url);
 
-        if (gettype($data) === "object" && count((array) $data) > 0) {
+        if (gettype($data) === "array" && count($data) > 0) {
             return new LeagueListDTO($data->leagueId, $data->entries, $data->tier, $data->name, $data->queue);
         }
 
@@ -71,7 +71,7 @@ class LeagueV4 extends RiotAPI
         $data = $this->executeRequest($url);
         $result = [];
 
-        if (gettype($data) === "object" && count((array) $data) > 0) {
+        if (gettype($data) === "array" && count($data) > 0) {
             foreach ($data as $entry) {
                 $result[] = new LeagueEntryDTO(
                     $entry->leagueId, $entry->summonerId, $entry->summonerName, $entry->queueType, $entry->tier,
@@ -109,7 +109,7 @@ class LeagueV4 extends RiotAPI
         $data = $this->executeRequest($url);
         $result = [];
 
-        if (gettype($data) === "object" && count((array) $data) > 0) {
+        if (gettype($data) === "array" && count($data) > 0) {
             foreach ($data as $entry) {
                 $result[] = new LeagueEntryDTO(
                     $entry->leagueId, $entry->summonerId, $entry->summonerName, $entry->queueType, $entry->tier,
@@ -144,7 +144,7 @@ class LeagueV4 extends RiotAPI
         $url = "https://".strtolower($regionId).".api.riotgames.com/lol/league/v4/grandmasterleagues/by-queue/".$queueName;
         $data = $this->executeRequest($url);
 
-        if (gettype($data) === "object" && count((array) $data) > 0) {
+        if (gettype($data) === "array" && count($data) > 0) {
             return new LeagueListDTO($data->leagueId, $data->entries, $data->tier, $data->name, $data->queue);
         }
 
@@ -173,7 +173,7 @@ class LeagueV4 extends RiotAPI
         $url = "https://".strtolower($regionId).".api.riotgames.com/lol/league/v4/leagues/".$leagueId;
         $data = $this->executeRequest($url);
 
-        if (gettype($data) === "object" && count((array) $data) > 0) {
+        if (gettype($data) === "array" && count($data) > 0) {
             return new LeagueListDTO($data->leagueId, $data->entries, $data->tier, $data->name, $data->queue);
         }
 
@@ -202,7 +202,7 @@ class LeagueV4 extends RiotAPI
         $url = "https://".strtolower($regionId).".api.riotgames.com/lol/league/v4/masterleagues/by-queue/".$queueName;
         $data = $this->executeRequest($url);
 
-        if (gettype($data) === "object" && count((array) $data) > 0) {
+        if (gettype($data) === "array" && count($data) > 0) {
             return new LeagueListDTO($data->leagueId, $data->entries, $data->tier, $data->name, $data->queue);
         }
 

@@ -31,6 +31,7 @@ class RiotAPI
     }
 
     /**
+     * @return array|object
      * @throws InternalServerErrorException
      * @throws UnsupportedMediaTypeException
      * @throws DataNotFoundException
@@ -44,7 +45,7 @@ class RiotAPI
      * @throws ForbiddenException
      * @throws Exception
      */
-    public function executeRequest(string $url, array $headers = [], string $method = "GET"): object
+    public function executeRequest(string $url, array $headers = [], string $method = "GET")
     {
         $curl = new Curl();
 

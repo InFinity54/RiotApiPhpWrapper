@@ -19,7 +19,7 @@ class LeagueEntryDTO
     private bool $veteran;
     private bool $freshBlood;
     private bool $inactive;
-    private ?MiniSeriesDTO $miniSeries;
+    private ?MiniSeriesDTO $miniSeries = null;
 
     /**
      * @throws Exception
